@@ -1,69 +1,74 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>5-Day Weather Forecast</title>
-    <script src="js/script.js"></script>
-  </head>
-  <body>
+<head>
+  <title>5-Day Weather Forecast</title>
+  <link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+<body>
+  <div id="search">
     <h1>5-Day Weather Forecast</h1>
     <form>
       <label for="city-search">Search for a city:</label>
       <input type="text" id="city-search" name="city-search" />
       <button type="submit">Search</button>
     </form>
-    <ul>
+    <ul id="search-history">
       <li><a href="#">New York</a></li>
       <li><a href="#">London</a></li>
       <li><a href="#">Paris</a></li>
       <li><a href="#">Tokyo</a></li>
       <li><a href="#">Sydney</a></li>
-    </ul>
+    </ul>    
+  </div>
 
-    <div id="today-forecast">
-        <h2>City Name (date) <i>icon</i></h2>
-        <p>Temperature:</p>
-        <p>Wind:</p>
-        <p>Humidity:</p>
-    </div>
+  <div id="today-forecast">
+    <h2><span id="city-name"></span> (<span id="date"></span>) <i class="wi"></i></h2>
+    <p id="temperature"></p>
+    <p id="wind"></p>
+    <p id="humidity"></p>
+  </div>  
 
-    <div id="5-day-forecast">
-      <div>
-        <h2>5-Day Weather Forecast</h2>
-      </div>
-      <div>
-        <h3>Date</h3>
-        <i>icon</i>
-        <p>Temperature:</p>
-        <p>Wind:</p>
-        <p>Humidity:</p>
-      </div>
-      <div>
-        <h3>Date</h3>
-        <i>icon</i>
-        <p>Temperature:</p>
-        <p>Wind:</p>
-        <p>Humidity:</p>
-      </div>
-      <div>
-        <h3>Date</h3>
-        <i>icon</i>
-        <p>Temperature:</p>
-        <p>Wind:</p>
-        <p>Humidity:</p>
-      </div>
-      <div>
-        <h3>Date</h3>
-        <i>icon</i>
-        <p>Temperature:</p>
-        <p>Wind:</p>
-        <p>Humidity:</p>
-      </div>
-      <div>
-        <h3>Date</h3>
-        <i>icon</i>
-        <p>Temperature:</p>
-        <p>Wind:</p>
-        <p>Humidity:</p>
-      </div>
+  <div id="5-day-forecast">
+    <div>
+      <h2>5-Day Weather Forecast</h2>
     </div>
-  </body>
+    <div>
+      <h3>Date</h3>
+      <i class="wi"></i>
+      <p>Temperature:</p>
+      <p>Wind:</p>
+      <p>Humidity:</p>
+    </div>
+    <div>
+      <h3>Date</h3>
+      <i class="wi"></i>
+      <p>Temperature:</p>
+      <p>Wind:</p>
+      <p>Humidity:</p>
+    </div>
+    <div>
+      <h3>Date</h3>
+      <i class="wi"></i>
+      <p>Temperature:</p>
+      <p>Wind:</p>
+      <p>Humidity:</p>
+    </div>
+    <div>
+      <h3>Date</h3>
+      <i class="wi"></i>
+      <p>Temperature:</p>
+      <p>Wind:</p>
+      <p>Humidity:</p>
+    </div>
+    <div>
+      <h3>Date</h3>
+      <i class="wi"></i>
+      <p>Temperature:</p>
+      <p>Wind:</p>
+      <p>Humidity:</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
